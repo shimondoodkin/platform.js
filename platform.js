@@ -108,7 +108,6 @@
     os = format(
       os.replace(/ ce$/i, ' CE')
         .replace(/\bhpw/i, 'web')
-        .replace(/\bCrOS( [a-z][_a-z0-9]+\b)?/i, 'Chrome OS')
         .replace(/\bMacintosh\b/, 'Mac OS')
         .replace(/_PowerPC\b/i, ' OS')
         .replace(/\b(OS X) [^ \d]+/i, '$1')
@@ -460,7 +459,6 @@
     var os = getOS([
       'Windows Phone',
       'Android',
-      'CrOS',
       'CentOS',
       { 'label': 'Chrome OS', 'pattern': 'CrOS' },
       'Debian',
