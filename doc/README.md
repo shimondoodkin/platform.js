@@ -29,7 +29,7 @@
 
 <!-- div -->
 
-## <a name="toc-platform.os"></a> platform.os
+## <a name="toc-platform-os"></a> platform.os
 
 * <a href="#platformosarchitecture">`platform.os.architecture`</a>
 * <a href="#platformosfamily">`platform.os.family`</a>
