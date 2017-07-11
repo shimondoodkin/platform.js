@@ -1,10 +1,14 @@
-# Platform.js <sup>v1.3.4</sup>
+# Platform.js <sup>v1.3.5-1</sup>
 
 <!-- div class="toc-container" -->
 
+
+
+
 <!-- div -->
 
-## `platform`
+## <a name="toc-platform"></a> platform
+
 * <a href="#platform">`platform`</a>
 * <a href="#platformdescription">`platform.description`</a>
 * <a href="#platformlayout">`platform.layout`</a>
@@ -20,9 +24,13 @@
 
 <!-- /div -->
 
+
+
+
 <!-- div -->
 
-## `platform.os`
+## <a name="toc-platform.os"></a> platform.os
+
 * <a href="#platformosarchitecture">`platform.os.architecture`</a>
 * <a href="#platformosfamily">`platform.os.family`</a>
 * <a href="#platformostostring">`platform.os.toString`</a>
@@ -34,14 +42,19 @@
 
 <!-- div class="doc-container" -->
 
+
+
+
 <!-- div -->
 
-## `platform`
+## platform
+
+
+
 
 <!-- div -->
 
-<h3 id="platform"><code>platform</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1038 "View in source") [&#x24C9;][1]
+### <a name="platform"></a> `platform` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1046 "View in source") [&#x24C9;][1]
 
 The platform object.
 
@@ -49,10 +62,11 @@ The platform object.
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformdescription"><code>platform.description</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1046 "View in source") [&#x24C9;][1]
+### <a name="platformdescription"></a> `platform.description` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1054 "View in source") [&#x24C9;][1]
 
 The platform description.
 
@@ -60,10 +74,11 @@ The platform description.
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformlayout"><code>platform.layout</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1057 "View in source") [&#x24C9;][1]
+### <a name="platformlayout"></a> `platform.layout` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1065 "View in source") [&#x24C9;][1]
 
 The name of the browser's layout engine.
 <br>
@@ -75,10 +90,11 @@ The list of common layout engines include:<br>
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformmanufacturer"><code>platform.manufacturer</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1070 "View in source") [&#x24C9;][1]
+### <a name="platformmanufacturer"></a> `platform.manufacturer` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1078 "View in source") [&#x24C9;][1]
 
 The name of the product's manufacturer.
 <br>
@@ -92,10 +108,11 @@ The list of manufacturers include:<br>
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformname"><code>platform.name</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1086 "View in source") [&#x24C9;][1]
+### <a name="platformname"></a> `platform.name` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1094 "View in source") [&#x24C9;][1]
 
 The name of the browser/environment.
 <br>
@@ -113,10 +130,11 @@ eg. "Chrome Mobile", "Firefox Mobile", "IE Mobile" and "Opera Mobile"
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformos"><code>platform.os</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1131 "View in source") [&#x24C9;][1]
+### <a name="platformos"></a> `platform.os` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1139 "View in source") [&#x24C9;][1]
 
 The name of the operating system.
 
@@ -124,27 +142,37 @@ The name of the operating system.
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformparseuanavigatoruseragent"><code>platform.parse([ua=navigator.userAgent])</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L253 "View in source") [&#x24C9;][1]
+### <a name="platformparseuanavigatoruseragent"></a> `platform.parse([ua=navigator.userAgent])` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L253 "View in source") [&#x24C9;][1]
 
 Creates a new platform object.
 
+
+
+
 #### Arguments
+
 1. `[ua=navigator.userAgent]` *(Object|string)*: The user agent string or context object.
 
+
+
+
 #### Returns
+
 *(Object)*: A platform object.
 
 ---
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformprerelease"><code>platform.prerelease</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1094 "View in source") [&#x24C9;][1]
+### <a name="platformprerelease"></a> `platform.prerelease` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1102 "View in source") [&#x24C9;][1]
 
 The alpha/beta release indicator.
 
@@ -152,10 +180,11 @@ The alpha/beta release indicator.
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformproduct"><code>platform.product</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1107 "View in source") [&#x24C9;][1]
+### <a name="platformproduct"></a> `platform.product` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1115 "View in source") [&#x24C9;][1]
 
 The name of the product hosting the browser.
 <br>
@@ -170,24 +199,30 @@ The list of common products include:
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformtostring"><code>platform.toString()</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L610 "View in source") [&#x24C9;][1]
+### <a name="platformtostring"></a> `platform.toString()` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L611 "View in source") [&#x24C9;][1]
 
 Returns `platform.description` when the platform object is coerced to a string.
 
+
+
+
 #### Returns
+
 *(string)*: Returns `platform.description` if available, else an empty string.
 
 ---
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformua"><code>platform.ua</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1115 "View in source") [&#x24C9;][1]
+### <a name="platformua"></a> `platform.ua` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1123 "View in source") [&#x24C9;][1]
 
 The browser's user agent string.
 
@@ -195,10 +230,11 @@ The browser's user agent string.
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformversion"><code>platform.version</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1123 "View in source") [&#x24C9;][1]
+### <a name="platformversion"></a> `platform.version` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1131 "View in source") [&#x24C9;][1]
 
 The browser/environment version.
 
@@ -208,14 +244,19 @@ The browser/environment version.
 
 <!-- /div -->
 
+
+
+
 <!-- div -->
 
-## `platform.os`
+## platform.os
+
+
+
 
 <!-- div -->
 
-<h3 id="platformosarchitecture"><code>platform.os.architecture</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1139 "View in source") [&#x24C9;][1]
+### <a name="platformosarchitecture"></a> `platform.os.architecture` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1147 "View in source") [&#x24C9;][1]
 
 The CPU architecture the OS is built for.
 
@@ -223,10 +264,11 @@ The CPU architecture the OS is built for.
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformosfamily"><code>platform.os.family</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1152 "View in source") [&#x24C9;][1]
+### <a name="platformosfamily"></a> `platform.os.family` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1160 "View in source") [&#x24C9;][1]
 
 The family of the OS.
 <br>
@@ -240,24 +282,30 @@ Common values include:<br>
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformostostring"><code>platform.os.toString()</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1168 "View in source") [&#x24C9;][1]
+### <a name="platformostostring"></a> `platform.os.toString()` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1176 "View in source") [&#x24C9;][1]
 
 Returns the OS string.
 
+
+
+
 #### Returns
+
 *(string)*: The OS string.
 
 ---
 
 <!-- /div -->
 
+
+
 <!-- div -->
 
-<h3 id="platformosversion"><code>platform.os.version</code></h3>
-[&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.4/platform.js#L1160 "View in source") [&#x24C9;][1]
+### <a name="platformosversion"></a> `platform.os.version` [&#x24C8;](https://github.com/bestiejs/platform.js/blob/1.3.5-1/platform.js#L1168 "View in source") [&#x24C9;][1]
 
 The version of the OS.
 
@@ -269,4 +317,7 @@ The version of the OS.
 
 <!-- /div -->
 
- [1]: #platform "Jump back to the TOC."
+
+
+
+ [1]: #toc-platform "Jump back to the TOC."

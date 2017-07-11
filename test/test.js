@@ -27,11 +27,8 @@
     QUnit = QUnit.QUnit || QUnit
   ));
 
-  /** Load QUnit Extras. */
-  var QUnitExtras = load('../node_modules/qunit-extras/qunit-extras.js');
-  if (QUnitExtras) {
-    QUnitExtras.runInContext(root);
-  }
+  /** Provide an ASSERT library in both NodeJS and browser environments */
+  var assert = QUnit.assert;
 
   /** The `platform` object to check. */
   var platform = root.platform || (root.platform =
@@ -546,19 +543,19 @@
       'version': '38.0.2103.0'
     },
 
-    'Chrome 40.0.2214.93 on Chrome OS armv7l': {
+    'Chrome 40.0.2214.93 on Chrome OS armv7l 6457.83.0': {
       'ua': 'Mozilla/5.0 (X11; CrOS armv7l 6457.83.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/40.0.2214.93 Safari/537.36',
       'layout': 'Blink',
       'name': 'Chrome',
-      'os': 'Chrome OS armv7l',
+      'os': 'Chrome OS armv7l 6457.83.0',
       'version': '40.0.2214.93'
     },
 
-    'Chrome 43.0.2357.46 on Chrome OS 64-bit': {
+    'Chrome 43.0.2357.46 on Chrome OS 6946.31.0 64-bit': {
       'ua': 'Mozilla/5.0 (X11; CrOS x86_64 6946.31.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.46 Safari/537.36',
       'layout': 'Blink',
       'name': 'Chrome',
-      'os': 'Chrome OS 64-bit',
+      'os': 'Chrome OS 6946.31.0 64-bit',
       'version': '43.0.2357.46'
     },
 
@@ -2787,20 +2784,20 @@
       assert.strictEqual(actual.description, expected);
     });
 
-    test('parses Chrome OS Arm', function() {
+    QUnit.test('parses Chrome OS Arm', function() {
       var actual = parse('Mozilla/5.0 (X11; CrOS armv7l 6457.83.0) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/40.0.2214.93 Safari/537.36'),
-          expected = 'Chrome OS';
+          expected = 'Chrome OS armv7l';
 
-      equal(actual.os.family, expected);
-      equal(actual.os.version, '6457.83.0');
+      assert.equal(actual.os.family, expected);
+      assert.equal(actual.os.version, '6457.83.0');
     });
 
-    test('parses Chrome OS2 x86', function() {
+    QUnit.test('parses Chrome OS2 x86', function() {
       var actual = parse('Mozilla/5.0 (X11; CrOS x86_64 6946.31.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.46 Safari/537.36'),
           expected = 'Chrome OS';
 
-      equal(actual.os.family, expected);
-      equal(actual.os.version, '6946.31.0');
+      assert.equal(actual.os.family, expected);
+      assert.equal(actual.os.version, '6946.31.0');
     });
   }());
 
