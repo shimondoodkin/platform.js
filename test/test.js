@@ -313,6 +313,15 @@
       'version': '4.1#{alpha}'
     },
 
+    'Android Browser 4.0 (like Chrome 42.0.2311.129) on Android 5.1': {
+      'ua': 'Mozilla/5.0 (Linux; Android 5.1; XT1254 Build/SU4TL-44; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/42.0.2311.129 Mobile Safari/537.36',
+      'layout': 'Blink',
+      'likeChrome': true,
+      'name': 'Android Browser',
+      'os': 'Android 5.1',
+      'version': '4.0'
+    },
+
     'Arora 0.4 (like Safari 3.x) on Linux': {
       'ua': 'Mozilla/5.0 (X11; U; Linux; cs-CZ) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.4 (Change: 333 41e3bc6)',
       'layout': 'WebKit',
@@ -2588,7 +2597,6 @@
       'version': '49.0.2623.87',
       'architecture': 64
     }
-
   };
 
   /*--------------------------------------------------------------------------*/
