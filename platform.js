@@ -773,7 +773,7 @@
             name = 'Node.js';
             arch = data.arch;
             os = data.platform;
-            version = /[\d.]+/.exec(data.version)
+            version = /[\d.]+/.exec(data.version);
             version = version ? version[0] : 'unknown';
           }
         }
