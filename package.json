@@ -1,6 +1,6 @@
 {
   "name": "@gerhobbelt/platform",
-  "version": "1.3.5-6",
+  "version": "1.3.5-7",
   "description": "A platform detection library that works on nearly all JavaScript platforms.",
   "license": "MIT",
   "main": "platform.js",
@@ -15,12 +15,15 @@
   "scripts": {
     "build": "npm run doc && npm test",
     "doc-orig": "docdown platform.js doc/README.md style=github title=\"Platform.js <sup>v${npm_package_version}</sup>\" toc=properties url=https://github.com/GerHobbelt/platform.js/blob/${npm_package_version}/platform.js",
-    "doc": "docdown platform.js doc/README.md style=github title=\"Platform.js <sup>v1.3.5-6</sup>\" toc=properties url=https://github.com/GerHobbelt/platform.js/blob/1.3.5-6/platform.js",
+    "doc": "docdown platform.js doc/README.md style=github title=\"Platform.js <span>v1.1.1-1</span>\" toc=properties url=https://github.com/GerHobbelt/platform.js/blob/master/platform.js && gulp patch-version",
     "test": "node test/test",
+    "clear": "rm -f package-lock.json ; rm -rf node_modules",
     "pub": "npm publish --access public"
   },
   "devDependencies": {
     "@gerhobbelt/docdown": "0.7.3-5",
+    "gulp": "3.9.1",
+    "@gerhobbelt/gulp-fncallback": "2.0.3-6",
     "qunitjs": "2.4.1",
     "requirejs": "2.3.5"
   },
