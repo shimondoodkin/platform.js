@@ -1201,6 +1201,7 @@
   var platform = parse();
 
   // Some AMD build optimizers, like r.js, check for condition patterns like the following:
+  /*global define */
   if (typeof define == 'function' && typeof define.amd == 'object' && define.amd) {
     // Expose platform on the global object to prevent errors when platform is
     // loaded by a script tag in the presence of an AMD loader.
