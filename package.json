@@ -25,7 +25,7 @@
     "gulp": "3.9.1",
     "@gerhobbelt/gulp-fncallback": "2.0.3-6",
     "qunitjs": "2.4.1",
-    "requirejs": "2.3.5"
+    "requirejs": "2.3.6"
   },
   "files": [
     "platform.js"
