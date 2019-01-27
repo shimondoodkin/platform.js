@@ -394,7 +394,7 @@
       'Chrome',
       { 'label': 'Chrome', 'pattern': '(?:HeadlessChrome)' },
       { 'label': 'Chrome Mobile', 'pattern': '(?:CriOS|CrMo)' },
-      { 'label': 'Firefox', 'pattern': '(?:Firefox|Minefield)' },
+      { 'label': 'Firefox', 'pattern': '(?:Firefox|Minefield|Waterfox)' },
       { 'label': 'Firefox for iOS', 'pattern': 'FxiOS' },
       { 'label': 'IE', 'pattern': 'IEMobile' },
       { 'label': 'IE', 'pattern': 'MSIE' },
@@ -718,7 +718,7 @@
       product || (product = data[1]);
     }
     // Detect false positives for Firefox/Safari.
-    else if (!name || (data = !/\bMinefield\b/i.test(ua) && /\b(?:Firefox|Safari)\b/.exec(name))) {
+    else if (!name || (data = !/\b(Minefield|Waterfox)\b/i.test(ua) && /\b(?:Firefox|Safari)\b/.exec(name))) {
       // Escape the `/` for Firefox 1.
       if (name && !product && /[\/,]|^[^(]+?\)/.test(ua.slice(ua.indexOf(data + '/') + 8))) {
         // Clear name of false positives.
@@ -741,7 +741,7 @@
         'Version',
         'HeadlessChrome',
         qualify(name),
-        '(?:Firefox|Minefield|NetFront)'
+        '(?:Firefox|Minefield|Waterfox|NetFront)'
       ]);
     }
     // Detect stubborn layout engines.
