@@ -1,4 +1,4 @@
-# Platform.js <span>v1.3.5-8</span>
+# Platform.js <span>v1.3.5-9</span>
 
 <!-- div class="toc-container" -->
 
