@@ -13,20 +13,22 @@
   ],
   "repository": "GerHobbelt/platform.js",
   "scripts": {
-    "build": "npm run doc && npm test",
+    "build": "npm run doc && npm test && npm run dist",
     "doc-orig": "docdown platform.js doc/README.md style=github title=\"Platform.js <sup>v${npm_package_version}</sup>\" toc=properties url=https://github.com/GerHobbelt/platform.js/blob/${npm_package_version}/platform.js",
     "doc": "docdown platform.js doc/README.md style=github title=\"Platform.js <span>v1.1.1-1</span>\" toc=properties url=https://github.com/GerHobbelt/platform.js/blob/master/platform.js && gulp patch-version",
     "test": "node test/test",
+    "dist": "uglifyjs platform.js -o platform.min.js  && uglifyjs platform.js -o platform.pack.js --compress --mangle",
     "clear": "rm -f package-lock.json ; rm -rf node_modules",
     "pub": "npm publish --access public"
   },
   "devDependencies": {
     "@gerhobbelt/docdown": "0.7.3-5",
-    "gulp": "3.9.1",
+    "gulp": "4.0.1",
     "@gerhobbelt/gulp-fncallback": "2.0.3-6",
     "qunitjs": "2.4.1",
     "replace": "^1.1.0",
-    "requirejs": "2.3.6"
+    "requirejs": "2.3.6",
+    "uglify-js": "~2.7.5"
   },
   "files": [
     "platform.js"
